@@ -1,0 +1,9 @@
+services:
+  linux-dev:
+    build: .
+    container_name: linux-dev
+    volumes:
+      - ./workspace:/workspace
+    working_dir: /workspace
+    tty: true
+    stdin_open: true
